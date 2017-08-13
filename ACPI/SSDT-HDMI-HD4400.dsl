@@ -67,7 +67,7 @@ DefinitionBlock ("iASL6pnP8Q.aml", "SSDT", 1, "syscl", "am89hd44", 0x00003000)
                     "layout-id", 
                     Buffer (0x04)
                     {
-                         0x03, 0x00, 0x00, 0x00
+                         0x1B, 0x00, 0x00, 0x00
                     }
                 })
             }
