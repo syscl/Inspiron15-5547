@@ -41,6 +41,20 @@ Replace CLOVER with your new one, and reboot to see change.
 
 Change Log
 ----------------
+2017-8-13
+
+- Updated SSDT-HDMI-HD4400.dsl: layout = ```3``` -> layout = ```27```
+- Use native AppleHDA instead of VoodooHDA: Headphone and Speaker auto switch
+- ACPI hot patch: FixHEPT, IPIC, TIMER, ...
+- Updated for 10.12+ supported
+- Optimized config.plist: reduce code size
+- Use country code ```#a``` instead of ```US``` for 5Ghz Wi-Fi(universal solution cited from: XPS9350-issues)
+- Updated Clover to r4152
+- Updated RTL8100 to v2.0.0
+- Added iTunes DRM support
+- Added Hibernation support
+- Added FileValut2 support
+
 2016-5-21
 
 - Updated SSDT-HDMI-HD4400.dsl:
