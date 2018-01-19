@@ -4,19 +4,19 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>AutoMerge</key>
+		<true/>
 		<key>DSDT</key>
 		<dict>
 			<key>Fixes</key>
 			<dict>
-				<key>NewWay_80000000</key>
+				<key>FixHeaders</key>
 				<true/>
-				<key>FIX_TMR_40000</key>
+				<key>FIX_TMR</key>
 				<true/>
-				<key>FixIPIC_0040</key>
+				<key>FixIPIC</key>
 				<true/>
-				<key>FixHPET_0010</key>
-				<true/>
-				<key>FixHeaders_20000000</key>
+				<key>FixHPET</key>
 				<true/>
 			</dict>
 			<key>Patches</key>
@@ -84,6 +84,15 @@
 		<dict>
 			<key>DropOem</key>
 			<true/>
+			<key>Generate</key>
+			<dict>
+				<key>PluginType</key>
+				<true/>
+			</dict>
+			<key>NoOemTableId</key>
+			<true/>
+			<key>NoDynamicExtract</key>
+			<true/>
 		</dict>
 		<key>SortedOrder</key>
 		<array>
@@ -92,7 +101,6 @@
 			<string>SSDT-2.aml</string>
 			<string>SSDT-7.aml</string>
 			<string>SSDT-8.aml</string>
-			<string>SSDT-pr.aml</string>
 			<string>SSDT-HDMI-HD4400.aml</string>
 		</array>
 	</dict>
@@ -215,6 +223,21 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
+		<key>KernelToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>MSR 0xE2 _xcpm_idle instant reboot (c) Pike R. Alpha, syscl</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>ILniAAAADzA=</data>
+				<key>MatchOS</key>
+				<string>10.13.x,10.12.x,10.11.x</string>
+				<key>Replace</key>
+				<data>ILniAAAAkJA=</data>
+			</dict>
+		</array>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
