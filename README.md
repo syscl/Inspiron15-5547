@@ -41,6 +41,9 @@ Replace CLOVER with your new one, and reboot to see change.
 
 Change Log
 ----------------
+2018-01-19
+- Clean up and update softwares (including drivers and bootloader)
+
 2017-8-13
 
 - Updated SSDT-HDMI-HD4400.dsl: layout = ```3``` -> layout = ```27```
