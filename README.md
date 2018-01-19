@@ -43,6 +43,7 @@ Change Log
 ----------------
 2018-01-19
 - Clean up and update softwares (including drivers and bootloader)
+- Added ```High Sierra``` support (aka ```10.13+```)
 
 2017-8-13
 
